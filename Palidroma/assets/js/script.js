@@ -10,7 +10,7 @@ function palindroma (stringa){
   if (stringa === stringa.split('').reverse().join('')){
     return stringa + " è un parola palindroma";
   }else {
-  return stringa + " non è una parola palindroma";
+   return stringa + " non è una parola palindroma";
   }
   
 }
