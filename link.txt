@@ -1,0 +1,6 @@
+Function intro https://playcode.io/756763/
+JSnack 8 con function https://playcode.io/756605/
+JSnack 9 con function https://playcode.io/756771/
+scope https://playcode.io/756775/
+pairGenerator https://playcode.io/756802/
+switch https://playcode.io/756813/
