@@ -8,39 +8,41 @@ Dichiariamo chi ha vinto. */
 var pariDispari = prompt("scegli pari o dispari");
 var numero_utente = parseInt(prompt("scegli un numero da 1 a 5"));
 var numero_cpu = random(1,5);
-var risultato = somma(numero_utente, numero_cpu)
+var risultato = somma(numero_utente, numero_cpu);
 
 console.log("La tua scelta è " + pariDispari);
 console.log("Il tuo numero è " + numero_utente);
 console.log("Il numero del cpu è " + numero_cpu);
 console.log("La somma fa " + risultato);
-console.log(vittoria(pariDispari, risultato))
+console.log(vittoria(pariDispari, risultato));
 
 
 
 function random (min , max){
  var numero_rdm = Math.floor(Math.random() * ((max + 1) - min)) + min;
- return numero_rdm
-};
+ return numero_rdm;
+}
 
 function somma (n1, n2){
   var sum = n1 + n2;
   if(sum % 2 === 0){
-    return sum + ", questa somma di numeri è pari"
+    console.log("Questa somma è pari");
+    return sum;
   }else{
-    return sum + ", questa somma di numeri è dispari"
-  };
-};
+    console.log("Questa somma è dispari");
+    return sum; 
+  }
+}
 
 function vittoria (scelta,cifra){
   if(cifra % 2 === 0 && scelta == "pari"){
-    return "HAI VINTO"
-  }else if(cifra % 2 !==0 && scelta == "pari"){
-    return "HAI PERSO"
-  }else if(cifra % 2 ===0 && scelta == "dispari"){
-    return "HAI PERSO"
-  }else if(cifra % 2 !== 0 && scelta == "dispari"){
-    return "HAI VINTO"
+    return "HAI VINTO";
+  }else if(cifra % 2 !==0 && scelta == "dispari"){
+    return "HAI VINTO";
+  }else{
+    return "HAI PERSO";
   }
+
 }
+
 
